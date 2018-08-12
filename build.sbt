@@ -4,6 +4,16 @@ optimization := true
 
 publishArtifact := false
 
+addCompilerPlugin("com.thoughtworks.dsl" %% "compilerplugins-bangnotation" % "1.0.0-RC14")
+
+addCompilerPlugin("com.thoughtworks.dsl" %% "compilerplugins-reseteverywhere" % "1.0.0-RC14")
+
+libraryDependencies += "com.thoughtworks.dsl" %% "keywords-fork" % "1.0.0-RC14"
+
+libraryDependencies += "com.thoughtworks.dsl" %% "keywords-catch" % "1.0.0-RC14"
+
+libraryDependencies += "com.thoughtworks.dsl" %% "domains-task" % "1.0.0-RC14"
+
 libraryDependencies += "org.scala-lang.modules" %% "scala-async" % "0.9.7"
 
 libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.5.10"
